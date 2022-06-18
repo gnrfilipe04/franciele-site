@@ -25,8 +25,10 @@ const Home: NextPage = () => {
         <GridItem bg='orange.300' area={'header'} px={10} py={10}>
           <HStack justifyContent={'space-between'}>
             <Text>Logo</Text>
-            <Menu />
-            <Contacts />
+            <HStack spacing={20}>
+              <Menu />
+              <Contacts />
+            </HStack>
           </HStack>
         </GridItem>
         <GridItem px={10} bg='green.300' area={'main'}>
