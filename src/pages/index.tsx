@@ -6,6 +6,7 @@ import { About } from '../components/About'
 import { Contacts } from '../components/Contacts'
 import { Footer } from '../components/Footer'
 import { Menu } from '../components/Menu'
+import { ProcessType } from '../components/ProcessType'
 
 const Home: NextPage = () => {
 
@@ -16,7 +17,7 @@ const Home: NextPage = () => {
         templateAreas={`"header header"
                         "main main"
                         "footer footer"`}
-        gridTemplateRows={'100px 750px 80px'}
+        gridTemplateRows={'100px 2000px 80px'}
         gridTemplateColumns={'1fr'}
         h='200vh'
         gap='1'
@@ -33,6 +34,7 @@ const Home: NextPage = () => {
         </GridItem>
         <GridItem px={10} bg='green.300' area={'main'}>
           <About />
+          <ProcessType />
         </GridItem>
         <GridItem px={10} bg='blue.300' area={'footer'}>
           <Footer />
