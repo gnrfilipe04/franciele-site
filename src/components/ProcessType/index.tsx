@@ -8,6 +8,7 @@ export function ProcessType(): JSX.Element {
             h='200px'
             templateRows='repeat(2, 1fr)'
             templateColumns='repeat(6, 1fr)'
+            pt={10}
             gap={4}
             >
                 <GridItem colSpan={2} bg='tomato' />

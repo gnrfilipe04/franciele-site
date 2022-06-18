@@ -1,4 +1,5 @@
-import { Grid, GridItem, HStack, Text, VStack } from "@chakra-ui/react";
+import { Grid, GridItem, Text, VStack } from "@chakra-ui/react";
+import Image from 'next/image'
 
 export function About(): JSX.Element {
 
@@ -13,7 +14,7 @@ export function About(): JSX.Element {
                         Mauris vestibulum efficitur sapien ac facilisis. Pellentesque nec ipsum purus.</Text>
                 </VStack>
             </GridItem>
-            <GridItem w='100%' bg='blue.500' />
+            <GridItem w='100%' bg='blue.500' h={80}/>
         </Grid>
 
     )
