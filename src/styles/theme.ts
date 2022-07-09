@@ -1,38 +1,24 @@
 import { extendTheme } from '@chakra-ui/react'
+import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools'
 
-export const theme = extendTheme({
-    semanticTokens: {
-        colors: {
-          error: 'red.500',
-          success: 'green.500',
-          primary: {
-            default: 'cyan.500',
-            _dark: 'cyan.500',
-          },
-          secondary: {
-            default: 'gray.700',
-            _dark: 'gray.300',
-          }
-        },
-      },    
-    fonts: {
-        heading: "Poppins",
-        body: "Poppins"
+export default extendTheme({
+  config: {
+    initialColorMode: 'light',
+    useSystemColorMode: false
+  },
+  styles: {
+    global: (props: StyleFunctionProps) => ({
+      body: {
+        bg: mode('fr.background', 'fr.background')(props),
+        fontFamily: 'Poppins',
+      },
+    }),
+  },
+  semanticTokens: {
+    colors: {
+      'fr.background': '#FFFFFF',
+      'fr.primary': 'blackAlpha.800',
+      'fr.secondary': 'red.700'
     },
-    styles: {
-        global: {
-            semanticTokens: {
-                body: {
-                    bg: {
-                        default: 'gray.50',
-                        _dark: 'gray.900'
-                    },
-                    color: {
-                        default: 'gray.900',
-                        _dark: 'gray.200'
-                    },
-                }
-            }
-        }
-    }
+  },
 })

@@ -6,8 +6,12 @@ export function Menu(): JSX.Element {
             <BreadcrumbItem>
                 <BreadcrumbLink 
                     href='#'
+                    isCurrentPage
+                    color={'fr.secondary'}
+                    fontWeight={'medium'}
                     _hover={{
-                        textDecoration: 'none'
+                        textDecoration: 'none',
+                        color: 'fr.secondary'
                     }}
                 >Home</BreadcrumbLink>
             </BreadcrumbItem>
@@ -15,8 +19,10 @@ export function Menu(): JSX.Element {
             <BreadcrumbItem>
                 <BreadcrumbLink 
                     href='#'
+                    fontWeight={'medium'}
                     _hover={{
-                        textDecoration: 'none'
+                        textDecoration: 'none',
+                        color: 'fr.secondary'
                     }}
                 >Sobre</BreadcrumbLink>
             </BreadcrumbItem>
@@ -24,8 +30,10 @@ export function Menu(): JSX.Element {
             <BreadcrumbItem isCurrentPage>
                 <BreadcrumbLink 
                     href='#'
+                    fontWeight={'medium'}
                     _hover={{
-                        textDecoration: 'none'
+                        textDecoration: 'none',
+                        color: 'fr.secondary'
                     }}
                 >Contato</BreadcrumbLink>
             </BreadcrumbItem>
